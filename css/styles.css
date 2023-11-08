@@ -55,10 +55,6 @@ ul {
     color: #404bbf;
 }
 
-address {
-    font-style: normal;
-}
-
 
 .contacts-link {
     color:#434455;
@@ -77,6 +73,7 @@ address {
     width: 1440px;
     height: 600px;
     flex-shrink: 0;
+    padding: 188px 0;
 }
 
 .mainpage-title {
@@ -86,6 +83,9 @@ address {
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    max-width: 496px;
+    margin-left: 472px;
+    margin-bottom: 48px;
 }
 
 .button {
@@ -97,16 +97,15 @@ address {
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
-    display: inline-flex;
-    align-items: flex-start;
-    padding: 16px 32px;
+    display: block;
     gap: 10px;
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border: none;
     margin-left: 636px;
     margin-top: 0;
     margin-right: 635px;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
 }
 
@@ -133,6 +132,7 @@ address {
 
 .light-bg {
     background-color: #F4F4FD;
+    padding: 120px 0;
 }
 
 .our-team-title {
@@ -195,6 +195,8 @@ address {
 
 .footer-page {
     background-color: #2E2F42;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .studio-footer {
@@ -208,39 +210,45 @@ address {
     letter-spacing: 0.02em;
 }
 
+.header {
+    border-bottom: 1px solid #E7E9FC;
+}
+
 .container-header {
     display: flex;
     align-items: center;
-    width: 1440px;
-    height: 72px;
     flex-shrink: 0;
-    border-bottom: 1px solid #E7E9FC;
     background: #FFFFFF;
 }
 
+.nav {
+    display: flex;
+    align-items: center;
+    font-style: normal;
+}
 .nav-list {
-    display: inline-flex;
+    display: flex;
     align-items: flex-start;
     gap: 40px;
 }
 
-.nav-list:last-child {
-    margin-right: 332px;
+.nav-list-items {
+    padding: 24px 0;
 }
 
+.address {
+    display: flex;
+    align-items: center;
+    margin-left: 332px;
+    list-style: none;
+    font-style: normal;
+}
 .address-list {
     display: inline-flex;
     align-items: flex-start;
     gap: 40px;
 }
 
-.mainpage-container {
-    margin-left: 472px;
-    margin-bottom: 48px;
-    margin-right: 472px;
-    padding-top: 188px;
-    width: 496px;
-}
 
 .container {
     padding-top: 120px;
@@ -277,6 +285,11 @@ address {
     overflow: hidden;
 }
 
+.container-our-team {
+    margin-left: 156px;
+    margin-right: 156px;
+}
+
 .our-team-list {
     display: flex;
     align-items: flex-start;
@@ -289,7 +302,8 @@ address {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 32px;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .our-team-list-items-content {
@@ -299,7 +313,16 @@ address {
     justify-content: center;
     align-items: center;
     gap: 8px;
-    padding-bottom: 32px;
+    padding: 32px 0;
+}
+
+.our-portfolio {
+    padding: 120px 0;
+}
+
+.container-our-portfolio {
+    margin-left: 156px;
+    margin-right: 156px;
 }
 
 .our-portfolio-list {
@@ -320,6 +343,7 @@ address {
     gap: 32px;
     flex-shrink: 0;
     border: 1px solid #E7E9FC;
+    border-top: none;
     background-color: #FFFFFF;
 }
 
@@ -346,10 +370,12 @@ address {
 .container-footer {
     display: flex;
     flex-direction: column;
-    gap: 8px;
     flex-shrink: 0;
     margin-left: 156px;
-    padding-top: 100px;
-    padding-bottom: 100px;
     width: 264px;
+}
+
+.webstudio-logo-footer {
+    display: inline-block;
+    margin-bottom: 16px;
 }
