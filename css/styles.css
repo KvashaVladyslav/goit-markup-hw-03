@@ -341,14 +341,15 @@ ul {
     padding: 100px 0;
 } 
 
-.footer-container {
+.footer .container {
     width: 264px;
     height: 112px;
     flex-shrink: 0;
     margin-left: 156px;
+    padding: 0;
 }
 
-.footer-container .webstudio-logo {
+.footer .container .webstudio-logo {
     display: inline-block;
     margin-bottom: 16px;
 }
