@@ -350,7 +350,7 @@ ul {
     padding: 0;
 }
 
-.footer .container .webstudio-logo {
+.container a {
     display: inline-block;
     margin-bottom: 16px;
 }
