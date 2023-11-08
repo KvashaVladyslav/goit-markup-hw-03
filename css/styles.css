@@ -218,6 +218,9 @@ ul {
     display: flex;
     align-items: flex-start;
     gap: 40px;
+}
+
+.nav-list-items {
     padding: 24px 0;
 }
 
@@ -338,15 +341,14 @@ ul {
     padding: 100px 0;
 } 
 
-.footer .container {
-    display: flex;
-    flex-direction: column;
+.footer-container {
+    width: 264px;
+    height: 112px;
     flex-shrink: 0;
     margin-left: 156px;
-    width: 264px;
 }
 
-.footer .webstudio-logo {
+.footer-container .webstudio-logo {
     display: inline-block;
     margin-bottom: 16px;
 }
